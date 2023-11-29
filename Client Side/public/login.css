@@ -1,0 +1,211 @@
+body{
+  font-family:  sans-serif;
+	height:100vh;
+	min-height:550px;
+	/* background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg); */
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+    
+}
+.swal2-title
+{
+    font-size: 24px;
+}
+.swal2-popup
+{
+    width: 500px;
+    position: absolute;
+    top: -50%;
+    z-index: 2;
+}
+.swal2-confirm
+{
+    width: 80px;
+    font-size: 18px !important;
+
+}
+a{
+  text-decoration:none;
+  color:#444444;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color: rgba(236, 48, 20, 0.9);
+    border-radius: 15px;
+}
+.white-panel{
+    background-color:  whitesmoke;
+    height:500px;
+    position:absolute;
+    border-radius: 15px;
+    top:-25px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:#B8B8B8;
+}
+.login-reg-panel #label-register
+{
+    border:2px solid #9E9E9E;
+    padding:5px 5px;
+    width:150px;
+    margin:10% 35% 35% 20%;
+    display:block;
+    text-align:center;
+    cursor:pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.login-reg-panel #label-login
+{
+    border:2px solid #9E9E9E;
+    padding:5px 5px;
+    width:150px;
+    margin:10% 35% 35% 35%;
+    display:block;
+    text-align:center;
+    cursor:pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.login-info-box{
+    width:50%;
+    padding:0 50px;
+    top:30%;
+    left:0;
+    position:absolute;
+    text-align:left;
+    color: whitesmoke;
+}
+.register-info-box{
+    width:50%;
+    padding:0 50px;
+    top:30%;
+    color:whitesmoke;
+    right:0;
+    position:absolute;
+    text-align:right;
+    
+}
+.right-log{right:70px !important;}
+
+.login-show
+{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:center;
+    margin-top: 10px;
+    padding:60px; 
+}
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:center;
+    padding: 10px 50px;
+}
+.register-show h2{
+    margin-top: 10px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+.login-show input[type="text"], .login-show input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:30px 8px;
+    padding: 15px;
+    border: 2px solid #b5b5b5;
+    outline: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.login-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    /* text-transform: uppercase; */
+    border-radius: 15px;
+    float:center;
+    cursor:pointer;
+    margin-top: 10px;
+}
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+
+.register-show input[type="text"], .register-show input[type="password"],.register-show input[type="email"]{
+    width: 100%;
+    display: block;
+    margin:15px 10px;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.register-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    /* text-transform: uppercase; */
+    border-radius: 15px;
+    float:center;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+a{
+  text-decoration:none;
+  color:#2c7715;
+}
+    
+    

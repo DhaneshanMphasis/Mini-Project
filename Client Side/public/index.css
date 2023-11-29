@@ -1,0 +1,27 @@
+.navbar-nav {
+    text-align: right;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding-right: 1em;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .navbar-brand
+  {
+    margin-left: 20px;
+  }
+  #logo
+  {
+    width: 34px;
+   margin-right: -10px;
+  }
+#back
+{
+   width: 1300px;
+   height: 550px;
+   margin: 5px;
+   scroll-behavior: none;
+   background-size: cover;
+   border-radius: 10px;
+    
+}

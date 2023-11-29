@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Bootstrap CSS -->
+     
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+  <!-- Bootstrap Table CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Table JS -->
+  <link rel="stylesheet" href="user.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+</head>
+<body>
+    <div class="navbar1"><nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF5757;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img src="https://s3.amazonaws.com/libapps/accounts/24069/images/timeManagementClock.png"></img>
+            </button>
+            <img src="https://s3.amazonaws.com/libapps/accounts/24069/images/timeManagementClock.png" id="logo"></img>
+            <a class="navbar-brand" href="index.html">To_Do Task Management</a>
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="containertable">
+      <div class="welcome-message"id="para">Welcome, User!</div>
+      <div class="dropdown-container">
+          <select class="dropdown" id="dropdownpri">
+            <option value="Priority" class="dropdown1">Priority</option>
+            <option value="High" class="dropdown1">High</option>
+              <option value="Medium" class="dropdown1">Medium</option>
+              <option value="Low" class="dropdown1">Low</option>
+              <!-- Add more options as needed -->
+          </select>
+          <select id="dropdownsts" class="dropdown" >
+            <option value="Status" class="dropdown1">Status</option>
+            <option value="Completed" class="dropdown1">Completed</option>
+              <option value="In Progress" class="dropdown1">In Progress</option>
+              <option value="Pending" class="dropdown1">Pending</option>
+              <!-- Add more options as needed -->
+          </select>
+          <button onclick="displayTable()" id="reset"> Reset</button>
+          <button onclick="data()" id="fill"> Fliter</button>
+      </div>
+  </div>
+  <div class="input-group">
+    <input type="search"id="searchInput" placeholder="Search ....">
+</div>
+  <image src="https://tse4.mm.bing.net/th/id/OIP.atse-BYuJefye2ARfaZ58wAAAA?rs=1&pid=ImgDetMain"id="replaceimage"></image>
+    <div class="container mt-4">
+        <table class="table table-bordered table-striped mb-0"
+          id="editableTable">
+          <thead  style="background-color: #364e51;">
+            <tr>
+              <th onclick="sortTable(0)">ID <span id="icon-id" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th onclick="sortTable(1)">Title <span id="icon-title" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th onclick="sortTable(2)">Description <span id="icon-description" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th onclick="sortTable(3)">Comments <span id="icon-comments" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th onclick="sortTable(4)">Priority <span id="icon-priority" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th onclick="sortTable(5)">Status <span id="icon-status" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th >Submission Date</th>
+              <th onclick="sortTable(7)">Days <span id="icon-remainingdays" class="icon"><i class="fas fa-sort"></i></span></th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="data1">
+             
+          </tbody>
+        </table>
+      </div>
+      <script src="userdashboard.js"></script>
+</body>
+</html>
